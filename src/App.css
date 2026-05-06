@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+.control-btn {
+  height: 46px;
+  width: 46px;
+  border-radius: 999px;
+  border: 1px solid #f3bfd9;
+  background: rgba(255, 250, 253, 0.92);
+  color: #9a4c75;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(150, 86, 120, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.control-btn:hover {
+  background: #fff4fb;
+}
+
+.icon-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-heart {
+  width: 22px;
+  height: 22px;
+}
+
+.toast-inline {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.toast-success {
+  background: #edfdf4;
+  border-color: #92e2b2;
+  color: #1f7b4b;
+}
+
+.toast-error {
+  background: #fff0f4;
+  border-color: #ffb4ca;
+  color: #ae2859;
+}
+
+.romantic-btn {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, #ea5ea2, #be4ddb);
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  padding: 0.78rem 1.3rem;
+  box-shadow: 0 10px 25px rgba(176, 60, 129, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.romantic-btn:hover {
+  box-shadow: 0 14px 28px rgba(176, 60, 129, 0.38);
+  transform: translateY(-1px);
+}
+
+.romantic-btn:active {
+  transform: scale(0.98);
+}
+
+.floating-particle {
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  user-select: none;
+  opacity: 0.7;
+}
+
+.timeline-container {
+  scrollbar-width: thin;
+  scrollbar-color: #f1bad4 transparent;
+}
+
+.glow-frame {
+  background: radial-gradient(circle, rgba(255, 201, 227, 0.42), rgba(240, 216, 255, 0.35));
+  box-shadow: 0 0 30px rgba(212, 136, 188, 0.35);
+}
+
+.typing-caret {
+  display: inline-block;
+  margin-left: 2px;
+  animation: caretBlink 1s steps(1, end) infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(10vh) scale(0.9);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes caretBlink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .control-btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  .romantic-btn {
+    font-size: 1.03rem;
+    padding-inline: 1.6rem;
+  }
+}
