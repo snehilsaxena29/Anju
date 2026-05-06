@@ -223,7 +223,7 @@ function App() {
     >
       <audio ref={audioRef} loop muted={isMuted} preload="auto" playsInline>
         <source
-          src="src\assets\Qayde-se.mp3"
+          src={musicFile}
           type="audio/mpeg"
         />
       </audio>
@@ -1084,7 +1084,7 @@ function ThankYouPage({ isDarkMode = false }: { isDarkMode?: boolean }) {
           <div className="absolute -inset-2 rounded-[28px] bg-[conic-gradient(from_140deg_at_50%_50%,#f9a8d4,#fde68a,#c4b5fd,#f9a8d4)] opacity-70 blur-md" />
           <div className="relative overflow-hidden rounded-[24px] border-2 border-white/70 bg-white/60 p-2 shadow-2xl backdrop-blur-sm">
             <img
-              src="src/assets/Thanks.jpeg"
+              src={thanksImg}
               alt="Birthday memory"
               className="h-[370px] w-full rounded-[18px] object-cover sm:h-[430px]"
             />
