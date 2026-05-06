@@ -723,12 +723,15 @@ function MessagePage({ isDarkMode = false }: { isDarkMode?: boolean }) {
         {/* <video controls className="w-full rounded-2xl" preload="none" poster="https://picsum.photos/seed/video-poster/900/500">
           <source src="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS" type="video/mp4" />
         </video> */}
-        <p>
+        {/* <p>
           Visit this link for another surprise 👉🏽 <a className="font-bold" href="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS">THE SURPRISE</a>
+        </p> */}
+        <p>
+          Your surprise is under progress.Sorry for the inconvenience👉🏽👈🏽
         </p>
-          <span className="font-bold">
+          {/* <span className="font-bold">
             Disclaimer: Isko End mei dekhengi toh zada acha lagega apko(jo muje pata hai ap nai dekhengi😘)
-            </span>
+            </span> */}
       </div>
       
     </PageCard>
