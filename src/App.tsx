@@ -719,26 +719,47 @@ function MemoryTimelinePage({ isDarkMode = false }: { isDarkMode?: boolean }) {
 
 function MessagePage({ isDarkMode = false }: { isDarkMode?: boolean }) {
   return (
-    <PageCard title="A message for you" subtitle="Play this when you want my voice near you." isDarkMode={isDarkMode}>
-      <div className="glow-frame rounded-3xl p-3">
-        {/* <video controls className="w-full rounded-2xl" preload="none" poster="https://picsum.photos/seed/video-poster/900/500">
-          <source src="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/view?usp=drivesdk" type="video/mp4" />
-        </video> */}
-         <p>
-          Visit this link for another surprise 👉🏽 <a className="font-bold" href="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/view?usp=drivesdk">THE SURPRISE</a>
-        </p> 
-         {/* <p>
-          Your surprise is under progress.Sorry for the inconvenience👉🏽👈🏽
-        </p>  */}
-         <span className="font-bold">
-            Disclaimer: Isko End mei dekhengi toh zada acha lagega apko(jo muje pata hai ap nai dekhengi😘)
-            </span> 
+    <PageCard
+      title="A message for you"
+      subtitle="Play this when you want my voice near you."
+      isDarkMode={isDarkMode}
+    >
+      <div className="glow-frame rounded-3xl p-3 space-y-4">
+        
+        <div className="overflow-hidden rounded-2xl shadow-lg">
+          <iframe
+            src="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/preview"
+            width="100%"
+            height="480"
+            allow="autoplay"
+            className="rounded-2xl"
+          />
+        </div>
+
+        <p
+          className={`text-sm ${
+            isDarkMode ? "text-gray-300" : "text-[#6f4c62]"
+          }`}
+        >
+          In case the video doesn't load,
+          <a
+            href="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/view?usp=drivesdk"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-1 font-bold underline"
+          >
+            click here
+          </a>
+        </p>
+
+        <span className="font-bold text-pink-500">
+          Disclaimer: Isko End mei dekhengi toh zada acha lagega apko
+          (jo muje pata hai ap nai dekhengi😘)
+        </span>
       </div>
-      
     </PageCard>
   );
 }
-
 function LoveLetterPage({ active, isDarkMode = false }: LetterProps & { isDarkMode?: boolean }) {
   const fullText =
     `
