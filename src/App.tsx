@@ -4,6 +4,7 @@ import { HiMiniSpeakerWave,HiMiniSpeakerXMark } from "react-icons/hi2";
 import "./App.css";
 
 import sareeImg from "./assets/saree.jpeg";
+import bdaySong from "./assets/bday.mp4";
 import firstTalkImg from "./assets/first talk.webp";
 import selfieImg from "./assets/selfie.jpeg";
 import firstTripImg from "./assets/first trip.jpeg";
@@ -721,17 +722,17 @@ function MessagePage({ isDarkMode = false }: { isDarkMode?: boolean }) {
     <PageCard title="A message for you" subtitle="Play this when you want my voice near you." isDarkMode={isDarkMode}>
       <div className="glow-frame rounded-3xl p-3">
         {/* <video controls className="w-full rounded-2xl" preload="none" poster="https://picsum.photos/seed/video-poster/900/500">
-          <source src="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS" type="video/mp4" />
+          <source src="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/view?usp=drivesdk" type="video/mp4" />
         </video> */}
-        {/* <p>
-          Visit this link for another surprise 👉🏽 <a className="font-bold" href="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS">THE SURPRISE</a>
-        </p> */}
-        <p>
+         <p>
+          Visit this link for another surprise 👉🏽 <a className="font-bold" href="https://drive.google.com/file/d/1KPkjMtSt_lsBtqZWWcnX86mStIJIEECu/view?usp=drivesdk">THE SURPRISE</a>
+        </p> 
+         {/* <p>
           Your surprise is under progress.Sorry for the inconvenience👉🏽👈🏽
-        </p>
-          {/* <span className="font-bold">
+        </p>  */}
+         <span className="font-bold">
             Disclaimer: Isko End mei dekhengi toh zada acha lagega apko(jo muje pata hai ap nai dekhengi😘)
-            </span> */}
+            </span> 
       </div>
       
     </PageCard>
