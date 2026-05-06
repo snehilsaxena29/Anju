@@ -3,6 +3,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { HiMiniSpeakerWave,HiMiniSpeakerXMark } from "react-icons/hi2";
 import "./App.css";
 
+import sareeImg from "./assets/saree.jpeg";
+import firstTalkImg from "./assets/first talk.webp";
+import selfieImg from "./assets/selfie.jpeg";
+import firstTripImg from "./assets/first trip.jpeg";
+import dressImg from "./assets/Dress.jpeg";
+import strongImg from "./assets/strong.jpeg";
+import firstChallengeImg from "./assets/first challenge.webp";
+import gltiGif from "./assets/glti.gif";
+import cuteGif from "./assets/cute.gif";
+import kissGif from "./assets/kiss.gif";
+import thanksImg from "./assets/Thanks.jpeg";
+import musicFile from "./assets/Qayde-se.mp3";
+
 type HeartBurst = { id: number; x: number; y: number };
 type LetterProps = { active: boolean };
 type ToastType = "success" | "error";
@@ -25,50 +38,53 @@ const QUIZ_PAGE_INDEX = 4;
 
 const memories: Memory[] = [
   {
-   title: "Heyyy Gorgeous🫶🏽",
-   caption: "You look so cute in this😘. Pllllzzzzzzzz wear a saree, pic itti sundr hai, real mei toh behosh he ho jaunga madam🫶🏽🥹",
-   image: "src/assets/saree.jpeg",
- },
- {
-   title:"Our First Call🤙🏽",
-   caption:"Too nervous to talk but excited when you asked me🫶🏽. Never thought I could talk for 5 hrs, it was as easy as breathing 😘 ",
-   image:"src/assets/first talk.webp"
+    title: "Heyyy Gorgeous🫶🏽",
+    caption:
+      "You look so cute in this😘. Pllllzzzzzzzz wear a saree, pic itti sundr hai, real mei toh behosh he ho jaunga madam🫶🏽🥹",
+    image: sareeImg,
+  },
+  {
+    title: "Our First Call🤙🏽",
+    caption:
+      "Too nervous to talk but excited when you asked me🫶🏽. Never thought I could talk for 5 hrs, it was as easy as breathing 😘 ",
+    image: firstTalkImg,
   },
   {
     title: "Our First mirror selfie😘",
-    caption: "and now there's no stopping us🫶🏽...although we need to explore some more poses",
-    image: "src/assets/selfie.jpeg",
+    caption:
+      "and now there's no stopping us🫶🏽...although we need to explore some more poses",
+    image: selfieImg,
   },
   {
     title: "Our memorable trip🫶🏽",
-    caption: "I wanted to give you the best college trip, but apne toh muje hee meri best trip dedi. Thanks for giving me the most memorable trip of my college life🫂 ",
-    image: "src/assets/first trip.jpeg",
+    caption:
+      "I wanted to give you the best college trip, but apne toh muje hee meri best trip dedi. Thanks for giving me the most memorable trip of my college life🫂 ",
+    image: firstTripImg,
   },
   {
     title: "Exhausted but beautiful🫶🏽🥹",
-    caption: "Looks so much in pain but still gave 100% for team. They won because of you and not the dress. Proud of you🫂",
-    image: "src/assets/Dress.jpeg",
+    caption:
+      "Looks so much in pain but still gave 100% for team. They won because of you and not the dress. Proud of you🫂",
+    image: dressImg,
   },
   {
     title: "My strong girl🫂",
-    caption: `I know you're very strong and don't need anyone to depend on but you are free to share anything with me🫶🏽. Akele nai roya kriye madam vrna mere hone ka kya fayda🥹.
-    Imp fact: Crying in front of your partner decreases your paretner's stress by 90%. Toh apne liye nai toh mere liye samne ro liya kriye🫂🥹. I can handle you and  myself when you show your emotions upfront but I can't handle myself when I get to know that I was too late to be there for you.`,
-    image: "src/assets/strong.jpeg",
+    caption: `I know you're very strong and don't need anyone to depend on but you are free to share anything with me🫶🏽.`,
+    image: strongImg,
   },
-   {
+  {
     title: "The challenge💪🏽",
-    caption: "You look so cute doing this🥹🫶🏽. Waiting for another challenge😘",
-    image: "src/assets/first challenge.webp",
+    caption:
+      "You look so cute doing this🥹🫶🏽. Waiting for another challenge😘",
+    image: firstChallengeImg,
   },
-
-   {
+  {
     title: "Sb snehil saxena ki galti hai🤓",
-    caption: "Meri he toh glti hoti hamesha😘. Nai bi hogi tobi maan lunga, apke liye kuch bi🫶🏽",
-    image: "src/assets/glti.gif",
+    caption:
+      "Meri he toh glti hoti hamesha😘. Nai bi hogi tobi maan lunga, apke liye kuch bi🫶🏽",
+    image: gltiGif,
   },
-  
 ];
-
 const futurePlans = [
   "Watch Spider-Man: Brand New Day wiht you💪🏽",
   "Dance with you on Tum se hi🫶🏽",
@@ -561,8 +577,10 @@ function LandingPage({ onStart, isDarkMode = false }: { onStart: () => void; isD
               className="h-[370px] w-full rounded-[18px] object-cover sm:h-[430px]"
             />
           </div> */}
-          
-        <img src="src\assets\cute.gif" alt="cute" className="h-[370px] w-full rounded-[18px] object-cover sm:h-[430px]"></img>
+          <div className="flex justify-center">
+
+        <img src={cuteGif} alt="cute" className="rounded-[18px] object-cover sm:h-[430px] object-contain"></img>
+          </div>
         <button className="romantic-btn mt-6" onClick={onStart} type="button">
           Start the Surprise
         </button>
@@ -933,7 +951,7 @@ function InteractivePage({
               </p>
               <div className="mt-4 overflow-hidden rounded-2xl border border-pink-200">
                 <img
-                  src="src/assets/kiss.gif"
+                  src={kissGif}
                   alt="Celebration confetti"
                   className="h-48 w-full object-contain"
                 />
