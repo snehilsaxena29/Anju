@@ -4,7 +4,7 @@ import { HiMiniSpeakerWave,HiMiniSpeakerXMark } from "react-icons/hi2";
 import "./App.css";
 
 import sareeImg from "./assets/saree.jpeg";
-import bdaySong from "./assets/bday.mp4";
+// import bdaySong from "./assets/bday.mp4";
 import firstTalkImg from "./assets/first talk.webp";
 import selfieImg from "./assets/selfie.jpeg";
 import firstTripImg from "./assets/first trip.jpeg";
