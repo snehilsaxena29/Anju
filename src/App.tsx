@@ -150,8 +150,8 @@ function App() {
       onPerfectUnlockChange={setQuizPerfectUnlock}
       onNextPage={() => goToPage("next")}
       />,
-      <MessagePage key="message" isDarkMode={isDarkMode} />,
       <FuturePage key="future" isDarkMode={isDarkMode} />,
+      <MessagePage key="message" isDarkMode={isDarkMode} />,
       <LoveLetterPage key="letter" active={pageIndex === 7} isDarkMode={isDarkMode} />,
       <ThankYouPage key="thanks" isDarkMode={isDarkMode} />,
     ],
@@ -720,13 +720,17 @@ function MessagePage({ isDarkMode = false }: { isDarkMode?: boolean }) {
   return (
     <PageCard title="A message for you" subtitle="Play this when you want my voice near you." isDarkMode={isDarkMode}>
       <div className="glow-frame rounded-3xl p-3">
-        <video controls className="w-full rounded-2xl" preload="none" poster="https://picsum.photos/seed/video-poster/900/500">
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-        </video>
+        {/* <video controls className="w-full rounded-2xl" preload="none" poster="https://picsum.photos/seed/video-poster/900/500">
+          <source src="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS" type="video/mp4" />
+        </video> */}
+        <p>
+          Visit this link for another surprise 👉🏽 <a className="font-bold" href="https://youtube.com/shorts/0dBK4Dt8Irg?si=MPYIMPmZpLvFlVqS">THE SURPRISE</a>
+        </p>
+          <span className="font-bold">
+            Disclaimer: Isko End mei dekhengi toh zada acha lagega apko(jo muje pata hai ap nai dekhengi😘)
+            </span>
       </div>
-      <audio controls className="mt-4 w-full">
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-      </audio>
+      
     </PageCard>
   );
 }
